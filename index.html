@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Fonts/Lugrasimo-Regular.ttf" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/anim.css" />
+    <link rel="stylesheet" href="./css/tailwind-all.min.css">
+    <link rel="stylesheet" href="./Icon/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Markato</title>
+  </head>
+  <body data-spy="scroll" data-target="#scroll-spy" class="bg-blue-900">
+    <section>
+      <div class="container p-5">
+        <div class=" w-75 mx-auto bg-blue-900 shadow-2xl ">
+          <div class=" mx-auto p-10 ">
+            <div class="text-center text-blue-500 mb-4">
+              <H1>Smart Login System</H1>
+            </div>
+            <Form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control text-white" id="UserEmailSingin" placeholder="name@example.com" required >
+                <label for="UserEmailSingin">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control text-white" id="UserPasswordSingin" placeholder="Password">
+                <label   for="UserPasswordSingin" >Password</label>
+              </div>
+            </Form>
+            <div>
+              <button type="submit" onclick="Login(this.value)" class="btn btn-outline-primary w-100 mt-4" >Login</button>
+            </div>
+            <div class="popup" id="popup">
+              
+            </div>
+            <div class="text-center mt-4 text-blue-500">
+              <h3>Don't have an account?</h3>
+              <a class="text-white" href="./Singup.html">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

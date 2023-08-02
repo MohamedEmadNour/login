@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Fonts/Lugrasimo-Regular.ttf" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/anim.css" />
+    <link rel="stylesheet" href="./css/tailwind-all.min.css">
+    <link rel="stylesheet" href="./Icon/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Markato</title>
+  </head>
+  <body data-spy="scroll" data-target="#scroll-spy" class="bg-blue-900">
+    <section>
+      <div class="container p-5">
+        <div class=" w-75 mx-auto bg-blue-900 shadow-2xl ">
+          <div class=" mx-auto p-10 relative ">
+            <div class="text-center text-blue-500 mb-4">
+              <H1>Smart Login System</H1>
+            </div>
+            <Form>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control text-white" id="UserNameSingup" placeholder="Adam" required >
+                    <label for="UserNameSingup">Your Full Name</label>
+                  </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control text-white" id="UserEmailSingup" placeholder="name@example.com" required >
+                <label for="UserEmailSingup">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control text-white" id="UserPasswordSingup" placeholder="Password" required>
+                <label   for="UserPasswordSingup" >Password</label>
+              </div>
+            </Form>
+            <div >
+              <button type="submit" onclick="SaveUserDataSingup()" class="btn btn-outline-primary w-100 mt-4" >Sing Up </button>
+            </div>
+            <div class="popup" id="popup">
+                <span> You Have Been SingUp Successful</span>
+            </div>
+            <div class="text-center mt-4 text-blue-500">
+              <h3>You have an account?</h3>
+              <a class="text-white"  href="./index.html">Signin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/Singup.js"></script>
+  </body>
+</html>
